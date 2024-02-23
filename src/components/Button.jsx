@@ -16,7 +16,7 @@ const Button = ({ num, key, inputVal, setInputVal }) => {
     <>
       <button
         key={key}
-        className="text-white  bg-orange-500 font-bold text-xl mx-4 px-6 py-3 my-3"
+        className="text-white  bg-orange-500 font-bold  px-6 py-3 text-3xl w-20 h-20 rounded-lg text-center"
         onClick={handleOn}
       >
         {num}

@@ -28,15 +28,15 @@ export default function App() {
 
   const [inputVal, setInputVal] = useState("");
   return (
-    <div className=" bg-slate-700 flex items-center justify-center h-screen">
-      <div className="bg-black h-[70%] w-[30%] text-white ">
+    <div className=" bg-slate-700 flex items-center justify-center h-screen ">
+      <div className="bg-black p-8   w-[500px] text-white rounded-3xl ">
         <input
           type="text"
-          className="w-[90%] m-4  p-4 mx-5 text-black text-end"
+          className=" mb-8 p-4  text-black text-end rounded-xl text-3xl w-full"
           onChange={(e) => setInputVal(e.target.value)}
           value={inputVal}
         />
-        <div className="flex flex-wrap gap-1 mx-5  items-center justify-center">
+        <div className="flex flex-wrap gap-6  items-center justify-center">
           {nums.map((num, i) => (
             <Button
               key={i}
